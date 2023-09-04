@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/rddm.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <title>Школьная жизнь</title>
+
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="css/interface.css">
 </head>
 
 <body>
+
     <header class="header">
         <div class="container header__inner">
             <div class="logo logo__inner">
@@ -30,33 +30,40 @@
                 </button>
                 <ul class="menu__list header__menu-list">
                     <li class="menu__list-item">
-                        <a class="menu__list-link a" href="index.html">Главная</a>
+                        <a class="menu__list-link a" href="index.html ">Главная</a>
                     </li>
                     <li class="menu__list-item">
                         <a class="menu__list-link a" href="#">О школе</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link a" href="svyas s nami.html">Связь с нами</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="main-block">
-                <div class="main-block">
-                    <div class="block">
-                        <img id="myImg" src="images/maxresdefault.jpg" alt="Серёга Пират" width="300px" height="100px">
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                          </div>
-                    </div>
-                    <div class="block"></div>
-                </div>
+    <div class="container">
+        <h1>Анкета обратной связи</h1>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
             </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="response" class="hidden">
+            <p>Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.</p>
         </div>
-    </main>
+    </div>
 
     <footer class="footer footer__inner">
         <div class="container">
@@ -65,6 +72,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/rddm.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="js/sendemail.js"></script>
 </body>
+
+</html>
