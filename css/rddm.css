@@ -154,13 +154,13 @@ footer{
         position: absolute;
         right: 0;
         top: 40px;
-        transform: translateX(100%);
+        transform: translateY(-150%);
         transition: transform .5s ease;
     }
     
     .header__menu-list.menu-open{
         top:40px;
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
     .menu__btn{
         display: flex;
