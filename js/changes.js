@@ -8,3 +8,6 @@ document.querySelectorAll('.main-block img').forEach(img => {
   document.querySelector('.pop-up span').onclick = () =>{
     document.querySelector('.pop-up').style.display = 'none';
   }
+
+
+  
