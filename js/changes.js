@@ -10,4 +10,4 @@ document.querySelectorAll('.main-block img').forEach(img => {
   }
 
 
-  
+    
